@@ -7,9 +7,8 @@ A Machine Learning project that classifies email messages as **Spam** or **Ham (
 ## 🚀 Live Application
 
 Run locally:
-
-```bash
 streamlit run app.py
+
 📖 Project Overview
 
 Email spam detection is a classic NLP problem in text classification.
