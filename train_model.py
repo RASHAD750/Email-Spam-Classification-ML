@@ -18,7 +18,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 
 # Load dataset
-data = pd.read_csv("/content/Spam (2).csv", encoding='latin-1')
+data = pd.read_csv("dataset/spam.csv", encoding='latin-1')
 data = data.drop(columns=['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'])
 data.columns = ['Label', 'Text']
 
