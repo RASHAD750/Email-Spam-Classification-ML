@@ -1,10 +1,10 @@
-# 📬 Email Spam Classification using Machine Learning
+# Email Spam Classification using Machine Learning
 
 A complete end-to-end Machine Learning project that classifies email messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) techniques and an interactive Streamlit web interface.
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Spam detection is one of the most practical real-world NLP classification problems.
 
@@ -18,30 +18,30 @@ This project demonstrates:
 
 The system predicts whether an email is:
 
-- 🚨 **Spam**
-- ✅ **Ham (Not Spam)**
+-   **Spam**
+-   **Ham (Not Spam)**
 
 ---
 
-## 🧠 Machine Learning Workflow
+##  Machine Learning Workflow
 
-### 1️⃣ Data Preprocessing
+### 1️. Data Preprocessing
 - Convert text to lowercase  
 - Remove numbers  
 - Remove punctuation  
 - Remove special characters  
 
-### 2️⃣ Feature Engineering
+### 2️. Feature Engineering
 - TF-IDF Vectorization  
 - Converts textual data into numerical feature vectors  
 - Captures word importance across documents  
 
-### 3️⃣ Model Used
+### 3️. Model Used
 - Multinomial Naive Bayes  
 - Efficient for text classification  
 - Works well with high-dimensional sparse data  
 
-### 4️⃣ Model Evaluation
+### 4️. Model Evaluation
 Performance evaluated using:
 
 - Precision  
@@ -51,7 +51,7 @@ Performance evaluated using:
 
 ---
 
-## 📊 Dataset Information
+## Dataset Information
 
 - SMS Spam Collection Dataset  
 - Cleaned and structured  
@@ -67,7 +67,7 @@ Example dataset format:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Email-Spam-Classification-ML/
@@ -89,16 +89,16 @@ Email-Spam-Classification-ML/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Clone Repository
+### 1️. Clone Repository
 
 ```bash
 git clone https://github.com/your-username/Email-Spam-Classification-ML.git
 cd Email-Spam-Classification-ML
 ```
 
-### 2️⃣ Install Dependencies
+### 2️. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🏋️ Train the Model
+## Train the Model
 
 ```bash
 python train_model.py
@@ -120,7 +120,7 @@ models/spam_classifier.pkl
 
 ---
 
-## 🌐 Run the Web Application
+## Run the Web Application
 
 ```bash
 streamlit run app.py
@@ -134,13 +134,13 @@ http://localhost:8501
 
 ---
 
-## 🖥 Application Preview
+## Application Preview
 
 ![App Screenshot](screenshots/app_preview.png)
 
 ---
 
-## 📈 Why Naive Bayes Works Well for Spam Detection
+## Why Naive Bayes Works Well for Spam Detection
 
 Naive Bayes performs efficiently for spam detection because:
 
@@ -151,7 +151,7 @@ Naive Bayes performs efficiently for spam detection because:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python  
 - Pandas  
@@ -163,7 +163,7 @@ Naive Bayes performs efficiently for spam detection because:
 
 ---
 
-## 🎯 Skills Demonstrated
+## Skills Demonstrated
 
 - Natural Language Processing (NLP)  
 - Text Cleaning & Preprocessing  
@@ -175,7 +175,7 @@ Naive Bayes performs efficiently for spam detection because:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add Confusion Matrix Visualization  
 - Compare with Logistic Regression / SVM  
@@ -186,15 +186,5 @@ Naive Bayes performs efficiently for spam detection because:
 
 ---
 
-## 👨‍💻 Author
-
-**Muhammed Rashad P**  
-Data Enthusiast | AI & ML Developer  
-
-📧 rashadchr@gmail.com  
-🔗 LinkedIn: (Add your link)  
-🔗 GitHub: (Add your profile link)  
-
----
 
 ⭐ If you found this project useful, consider giving it a star on GitHub.
