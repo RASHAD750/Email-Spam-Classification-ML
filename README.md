@@ -1,163 +1,200 @@
-# 📬 Email Spam Classification using TF-IDF & Naive Bayes
+# 📬 Email Spam Classification using Machine Learning
 
-A Machine Learning project that classifies email messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) techniques and a deployed Streamlit web interface.
+A complete end-to-end Machine Learning project that classifies email messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) techniques and an interactive Streamlit web interface.
 
 ---
 
-## 🚀 Live Application
+## 📖 Project Overview
 
-Run locally:
-streamlit run app.py
+Spam detection is one of the most practical real-world NLP classification problems.
 
-📖 Project Overview
+This project demonstrates:
 
-Email spam detection is a classic NLP problem in text classification.
+- Text preprocessing  
+- Feature extraction using TF-IDF  
+- Probabilistic classification using Naive Bayes  
+- Model serialization  
+- Web deployment with Streamlit  
 
-This project implements a complete ML pipeline:
+The system predicts whether an email is:
 
-Text preprocessing
+- 🚨 **Spam**
+- ✅ **Ham (Not Spam)**
 
-Feature engineering using TF-IDF
+---
 
-Multinomial Naive Bayes classification
+## 🧠 Machine Learning Workflow
 
-Model serialization using Pickle
+### 1️⃣ Data Preprocessing
+- Convert text to lowercase  
+- Remove numbers  
+- Remove punctuation  
+- Remove special characters  
 
-Interactive Streamlit Web App
+### 2️⃣ Feature Engineering
+- TF-IDF Vectorization  
+- Converts textual data into numerical feature vectors  
+- Captures word importance across documents  
 
-The system predicts whether an email message is:
+### 3️⃣ Model Used
+- Multinomial Naive Bayes  
+- Efficient for text classification  
+- Works well with high-dimensional sparse data  
 
-🚨 Spam
+### 4️⃣ Model Evaluation
+Performance evaluated using:
 
-✅ Ham (Not Spam)
+- Precision  
+- Recall  
+- F1-Score  
+- Classification Report  
 
-🧠 Machine Learning Pipeline
-1️⃣ Data Preprocessing
+---
 
-Convert text to lowercase
+## 📊 Dataset Information
 
-Remove numbers
+- SMS Spam Collection Dataset  
+- Cleaned and structured  
+- Balanced before training  
+- Stored inside `dataset/spam.csv`
 
-Remove punctuation
+Example dataset format:
 
-Clean unwanted characters
+| Label | Text |
+|-------|------|
+| spam  | Congratulations! You have won... |
+| ham   | Hey, are we meeting today? |
 
-2️⃣ Feature Engineering
+---
 
-TF-IDF Vectorization
+## 📂 Project Structure
 
-Converts text into numerical feature vectors
-
-Captures word importance
-
-3️⃣ Model Used
-
-Multinomial Naive Bayes
-
-Suitable for text classification problems
-
-Fast and efficient for large vocabularies
-
-4️⃣ Class Balancing
-
-Spam and Ham classes were balanced before training to prevent bias.
-
-📊 Dataset
-
-SMS Spam Collection Dataset
-
-Cleaned and structured
-
-Stored inside dataset/spam.csv
-
-Dataset format:
-
-Label	Text
-spam	Free entry in 2 a wkly comp...
-ham	Hey, are we meeting today?
-📂 Project Structure
+```
 Email-Spam-Classification-ML/
 │
 ├── app.py
 ├── train_model.py
 ├── requirements.txt
 ├── README.md
+│
 ├── dataset/
 │   └── spam.csv
+│
 ├── models/
 │   └── spam_classifier.pkl
+│
 ├── screenshots/
 │   └── app_preview.png
-⚙️ Installation
-1️⃣ Clone Repository
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/your-username/Email-Spam-Classification-ML.git
 cd Email-Spam-Classification-ML
-2️⃣ Install Dependencies
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-🏋️ Model Training
+```
 
-To train the model:
+---
 
+## 🏋️ Train the Model
+
+```bash
 python train_model.py
+```
 
 This generates:
 
+```
 models/spam_classifier.pkl
-🌐 Run Web App
+```
+
+---
+
+## 🌐 Run the Web Application
+
+```bash
 streamlit run app.py
+```
 
-Open browser:
+Then open your browser:
 
+```
 http://localhost:8501
-🖥 Application Preview
+```
 
-📈 Evaluation Metrics
+---
 
-Model performance evaluated using:
+## 🖥 Application Preview
 
-Precision
+![App Screenshot](screenshots/app_preview.png)
 
-Recall
+---
 
-F1-Score
+## 📈 Why Naive Bayes Works Well for Spam Detection
 
-Classification Report
+Naive Bayes performs efficiently for spam detection because:
 
-Naive Bayes performs efficiently for spam detection due to probabilistic modeling of word frequencies.
+- It models word probabilities
+- Works well with text frequency features
+- Handles large vocabularies efficiently
+- Fast training and prediction
 
-🛠 Technologies Used
+---
 
-Python
+## 🛠 Technologies Used
 
-Scikit-learn
+- Python  
+- Pandas  
+- Scikit-learn  
+- TF-IDF Vectorizer  
+- Multinomial Naive Bayes  
+- Streamlit  
+- Pickle  
 
-Pandas
+---
 
-TF-IDF Vectorizer
+## 🎯 Skills Demonstrated
 
-Multinomial Naive Bayes
+- Natural Language Processing (NLP)  
+- Text Cleaning & Preprocessing  
+- Feature Engineering  
+- Machine Learning Pipeline Design  
+- Model Serialization  
+- Web App Deployment  
+- Clean Project Structuring  
 
-Streamlit
+---
 
-Pickle
+## 🔮 Future Improvements
 
-🎯 Key Learning Outcomes
+- Add Confusion Matrix Visualization  
+- Compare with Logistic Regression / SVM  
+- Upgrade to Deep Learning (LSTM / BERT)  
+- Deploy to Streamlit Cloud  
+- Add REST API version  
+- Add Docker support  
 
-✔ NLP preprocessing
-✔ Text vectorization
-✔ ML pipeline building
-✔ Model persistence
-✔ Web deployment using Streamlit
-✔ Real-world text classification problem
+---
 
-🔮 Future Improvements
+## 👨‍💻 Author
 
-Add Confusion Matrix Visualization
+**Muhammed Rashad P**  
+Data Enthusiast | AI & ML Developer  
 
-Try Logistic Regression / SVM
+📧 rashadchr@gmail.com  
+🔗 LinkedIn: (Add your link)  
+🔗 GitHub: (Add your profile link)  
 
-Upgrade to Deep Learning (LSTM / BERT)
+---
 
-Deploy on Streamlit Cloud
-
-Add REST API version
+⭐ If you found this project useful, consider giving it a star on GitHub.
